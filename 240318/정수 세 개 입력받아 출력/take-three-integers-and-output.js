@@ -1,13 +1,13 @@
-const fs = require('fs');
+// 변수 선언, 입력
+const fs = require("fs");
+let input = fs.readFileSync(0).toString().trim().split("\n");
 
-// 표준 입력을 문자열로 읽어들임
-let inputString = fs.readFileSync(0, 'utf8');
+// 첫번째 줄은 공백으로 나눠져 있기 때문에
+// 한번 더 split을 해줍니다.
+let arr = input[0].split(" ")
+let a = Number(arr[0]);
+let b = Number(arr[1]);
+let c = Number(input[1]);
 
-// 공백과 개행 문자를 기준으로 문자열을 분리하여 배열로 저장
-let inputArray = inputString.split(/[ \n]+/);
-
-let a = Number(inputArray[0]);
-let b = Number(inputArray[1]);
-let c = Number(inputArray[2]);
-
+// 출력
 console.log(a, b, c);
