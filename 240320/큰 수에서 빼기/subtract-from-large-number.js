@@ -8,6 +8,6 @@ if (a > b) {
     console.log(a-b);
 }
 
-if (a < b) {
+if (a <= b) {
     console.log(b-a);
 }
