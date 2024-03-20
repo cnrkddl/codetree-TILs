@@ -8,5 +8,5 @@ if (a>b){
     console.log(a*b);
 }
 else{
-    console.log(parselnt(b/a));
+    console.log(Math.floor(b/a));
 }
