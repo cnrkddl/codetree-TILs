@@ -1,7 +1,7 @@
 const fs = require("fs");
-let input = Number(fs.readFileSync(0).toString().trim().split(" "));
+let input = fs.readFileSync(0).toString().trim();
 
-let a = input;
+let a = Number(input[0]);
 
 let c = (a = 100) ? "pass" : "failure";
 
