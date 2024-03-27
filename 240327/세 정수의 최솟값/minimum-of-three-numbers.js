@@ -9,12 +9,12 @@ if(a<=b && a<=c){
     result=a;
 }
 
-if(b<=a && b<=c){
+else if(b<=a && b<=c){
     result=b;
 }
 
 
-else{
+else if(c<=a && c<=b) {
      result=c;
 }
 
