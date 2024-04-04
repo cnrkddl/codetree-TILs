@@ -1,17 +1,17 @@
+// 입력 및 변수 선언
 const fs = require("fs");
-let a = fs.readFileSync(0).toString().trim().split(" ");
+let input = fs.readFileSync(0).toString().trim().split(" ");
 
-let result1;
-let result2;
+let middleScore = Number(input[0]);
+let finalScore = Number(input[1]);
 
-
-if (a[0]>=90 && (95<=a[1] &&a<=100)) {
-    result2= 100000;
-    }
-else if(a[0]>=90 && 90<=a[1]){
-    result2=50000;
-    }
-else{
-     result2=0;
-    }
-console.log(result2);
+// 출력
+if (middleScore >= 90 && finalScore >= 95) {
+    console.log(100000);
+}
+else if (middleScore >= 90 && finalScore >= 90) {
+    console.log(50000)
+}
+else {
+    console.log(0);
+}
